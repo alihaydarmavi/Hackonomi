@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #ddd;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1a1a1a;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #4dabf7;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #4dabf7;
+}
+
+.main-panel {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.main-panel header h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.stat-box h3 {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.stat-box p {
+  font-size: 1.6rem;
+  color: #4dabf7;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.app-table h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+table th {
+  background: #222;
+  color: #aaa;
+}
+
+table td {
+  color: #ddd;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  background: #4dabf7;
+  color: #121212;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+button.danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: #2ecc71;
+  color: #111;
+}
+
+.badge.passive {
+  background: #e67e22;
+  color: #111;
+}

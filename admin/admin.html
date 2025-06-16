@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hackonomi | Admin Paneli</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>Yönetim</h2>
+      <ul>
+        <li><a href="#">📊 Genel Bakış</a></li>
+        <li><a href="#">👥 Kullanıcılar</a></li>
+        <li><a href="#">📦 Uygulamalar</a></li>
+        <li><a href="#">⚠️ Raporlar</a></li>
+        <li><a href="#">🚪 Çıkış</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-panel">
+      <header>
+        <h1>Admin Paneli</h1>
+      </header>
+
+      <section class="stats">
+        <div class="stat-box">
+          <h3>Toplam Kullanıcı</h3>
+          <p>1240</p>
+        </div>
+        <div class="stat-box">
+          <h3>Uygulama Sayısı</h3>
+          <p>82</p>
+        </div>
+        <div class="stat-box">
+          <h3>Bugün Eklenen</h3>
+          <p>5</p>
+        </div>
+      </section>
+
+      <section class="app-table">
+        <h2>Uygulama Listesi</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>İsim</th>
+              <th>Kullanıcı</th>
+              <th>Durum</th>
+              <th>İşlem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#001</td>
+              <td>Not Defteri</td>
+              <td>QizilbashHaydar</td>
+              <td><span class="badge active">Aktif</span></td>
+              <td>
+                <button>Düzenle</button>
+                <button class="danger">Sil</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#002</td>
+              <td>Hesap Makinesi</td>
+              <td>ridvan_dev</td>
+              <td><span class="badge passive">Pasif</span></td>
+              <td>
+                <button>Düzenle</button>
+                <button class="danger">Sil</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
