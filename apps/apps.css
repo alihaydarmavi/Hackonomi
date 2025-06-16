@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ddd;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.logo span {
+  color: #4dabf7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #4dabf7;
+}
+
+.apps-section {
+  max-width: 1200px;
+  margin: 100px auto 60px;
+  padding: 0 20px;
+}
+
+.apps-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #eee;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.app-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+}
+
+.app-card img {
+  width: 80px;
+  margin-bottom: 20px;
+  filter: brightness(1.2);
+}
+
+.app-card h2 {
+  font-size: 1.4rem;
+  color: #4dabf7;
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4dabf7;
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background-color: #3399ff;
+}
+
+.btn-secondary {
+  border: 2px solid #4dabf7;
+  color: #4dabf7;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: #4dabf7;
+  color: #121212;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #1a1a1a;
+  color: #777;
+  margin-top: 60px;
+}

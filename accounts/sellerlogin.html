@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satıcı Girişi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Satıcı Girişi</h2>
+    <form action="/seller-login" method="POST">
+      <input type="email" name="email" placeholder="E-posta" required />
+      <input type="password" name="password" placeholder="Şifre" required />
+      <button type="submit">Giriş Yap</button>
+    </form>
+
+    <div class="seller-link">
+      Satıcı değil misiniz? <a href="login.html">Müşteri Girişi</a><br />
+      Hesabınız yok mu? <a href="sellersingup.html">Satıcı Ol</a>
+    </div>
+  </div>
+</body>
+</html>

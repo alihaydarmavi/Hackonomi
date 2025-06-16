@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayıt Ol</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Kayıt Ol</h2>
+    <form action="/signup" method="POST">
+      <input type="text" name="fullname" placeholder="Ad Soyad" required />
+      <input type="email" name="email" placeholder="E-posta" required />
+      <input type="password" name="password" placeholder="Şifre" required />
+      <input type="password" name="confirm-password" placeholder="Şifre Tekrar" required />
+      <button type="submit">Hesap Oluştur</button>
+    </form>
+
+    <div class="seller-link">
+      Zaten hesabın var mı? <a href="login.html">Giriş Yap</a>
+    </div>
+  </div>
+</body>
+</html>

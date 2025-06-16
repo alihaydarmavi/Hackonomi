@@ -1,0 +1,451 @@
+/* ===== GENEL AYARLAR ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #121212; /* Koyu siyah - ana arka plan */
+    color: #ddd; /* Açık gri yazı */
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  
+  /* ===== HEADER / NAVBAR ===== */
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 28px;
+    cursor: default;
+    user-select: none;
+    color: #ccc;
+    letter-spacing: 1.5px;
+  }
+  
+  .logo span {
+    color: #4dabf7; /* Hafif parlak mavi vurgu */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background: #4dabf7;
+    color: #121212;
+  }
+  
+  .btn-seller {
+    border: 2px solid #4dabf7;
+    padding: 7px 18px;
+    font-weight: 700;
+    color: #4dabf7;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-seller:hover {
+    background: #4dabf7;
+    color: #121212;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 120px auto 60px auto;
+    padding: 0 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1 1 500px;
+    animation: fadeInLeft 1s ease forwards;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: 1.3px;
+    color: #eee;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #aaa;
+  }
+  
+  .hero-buttons a {
+    text-decoration: none;
+    padding: 15px 40px;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: #4dabf7;
+    color: #121212;
+    box-shadow: 0 8px 15px rgba(77, 171, 247, 0.4);
+  }
+  
+  .btn-primary:hover {
+    background: #3399ff;
+    box-shadow: 0 15px 20px rgba(51, 153, 255, 0.6);
+    transform: translateY(-3px);
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 2px solid #4dabf7;
+    color: #4dabf7;
+  }
+  
+  .btn-secondary:hover {
+    background: #4dabf7;
+    color: #121212;
+  }
+  
+  .hero-image {
+    flex: 1 1 400px;
+    animation: fadeInRight 1s ease forwards;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* ===== FEATURES ===== */
+  
+  .features {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    letter-spacing: 1.3px;
+    color: #eee;
+  }
+  
+  .feature-list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-item {
+    background: #1e1e1e;
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1 1 280px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+  }
+  
+  .feature-item img {
+    width: 80px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+  }
+  
+  .feature-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #4dabf7;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  /* ===== TESTIMONIALS ===== */
+  
+  .testimonials {
+    background: #1a1a1a;
+    padding: 60px 30px;
+    margin: 80px auto;
+    max-width: 1100px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #eee;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-item {
+    background: #2a2a2a;
+    color: #ccc;
+    padding: 25px 30px;
+    border-radius: 20px;
+    flex: 1 1 280px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+    font-style: italic;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 1);
+  }
+  
+  .testimonial-item h4 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: #4dabf7;
+  }
+  
+  /* ===== FAQ ===== */
+  
+  .faq {
+    max-width: 1100px;
+    margin: 80px auto 100px auto;
+    padding: 0 30px;
+  }
+  
+  .faq h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #eee;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .faq-item {
+    background: #1e1e1e;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    background-color: #2a2a2a;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.4rem;
+    color: #4dabf7;
+    margin-bottom: 12px;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  /* ===== CONTACT FORM ===== */
+  
+  .contact {
+    max-width: 600px;
+    margin: 0 auto 100px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #eee;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    background: #2a2a2a;
+    color: #eee;
+    resize: none;
+    transition: box-shadow 0.3s ease;
+    outline: none;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #777;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    box-shadow: 0 0 10px #4dabf7;
+    background: #333;
+  }
+  
+  .contact-form button {
+    background: #4dabf7;
+    color: #121212;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #3399ff;
+    transform: translateY(-3px);
+  }
+  
+  /* ===== FOOTER ===== */
+  
+  footer {
+    text-align: center;
+    padding: 25px 0;
+    background: #1a1a1a;
+    color: #777;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  
+  /* ===== ANİMASYONLAR ===== */
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+  
+    .hero-text,
+    .hero-image {
+      flex: 1 1 100%;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.8rem;
+    }
+  
+    .feature-list {
+      flex-direction: column;
+    }
+  
+    .testimonial-list {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+    .nav-links {
+      gap: 15px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.4rem;
+    }
+  
+    .hero-buttons a {
+      padding: 12px 30px;
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  }
+  

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #ddd;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.logo span {
+  color: #4dabf7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #4dabf7;
+}
+
+.store-section {
+  max-width: 1200px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+}
+
+.store-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.category-filter button {
+  background: #1f1f1f;
+  color: #bbb;
+  border: 1px solid #4dabf7;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.category-filter button:hover {
+  background: #4dabf7;
+  color: #121212;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.app-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+}
+
+.app-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.app-card h2 {
+  font-size: 1.2rem;
+  color: #4dabf7;
+  margin: 10px 0;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: gold;
+  margin-bottom: 12px;
+}
+
+.btn-install {
+  background-color: #4dabf7;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-install:hover {
+  background-color: #3399ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #1a1a1a;
+  color: #777;
+  margin-top: 60px;
+}
